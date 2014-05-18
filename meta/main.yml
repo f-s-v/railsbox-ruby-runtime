@@ -1,0 +1,8 @@
+---
+galaxy_info:
+  author: Vadim Rastyagaev
+  description: Installs latest ruby from brightbox ppa.
+  license: BSD
+  min_ansible_version: 1.6
+  categories:
+  - development

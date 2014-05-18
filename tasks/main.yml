@@ -1,0 +1,9 @@
+- name: Add brightbox ruby repository
+  sudo: yes
+  apt_repository: repo='ppa:brightbox/ruby-ng' update_cache=yes
+- name: Install ruby
+  sudo: yes
+  apt: name={{ item }} state=latest
+  with_items:
+    - ruby2.1
+    - ruby2.1-dev
